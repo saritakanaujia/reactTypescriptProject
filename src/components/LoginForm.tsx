@@ -14,10 +14,6 @@ const LoginForm: React.FC = () => {
   });
   const navigate = useNavigate();
 
-  //   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //     console.log(e.target.name, e.target.value);
-  //     setFormData({ ...formData, [e.target.name]: e.target.value });
-  //   };
   const handleLogin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // 1. Perform validation/login logic here
