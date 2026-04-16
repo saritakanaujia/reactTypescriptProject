@@ -7,6 +7,7 @@ import {
   fetchUserFailure,
 } from "../store/userSlice";
 import { useDispatch, useSelector } from "react-redux";
+import CopyToClipboard from "./CopyToClipboard";
 
 const Dashboard: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -42,6 +43,7 @@ const Dashboard: React.FC = () => {
       {user && <p>{user.name}</p>}
       <button onClick={loadUser}>Load User</button>
       <button onClick={handleLogout}>Logout</button>
+      <CopyToClipboard />
     </div>
   );
 };
